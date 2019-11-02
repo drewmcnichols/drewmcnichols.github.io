@@ -1,0 +1,338 @@
+\documentclass[11pt,english]{article}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+% Uncomment any of the following four lines to get different fonts
+%\usepackage[garamondx,bigdelims]{newtxmath}
+%\usepackage{garamondx}
+%\usepackage{mathpazo}
+%\usepackage{mathptmx}
+\usepackage{newcent}
+
+% Colors: see  http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{oucrimson}   {RGB}{0.  ,0.  ,128.}
+\definecolor{byublue}     {RGB}{0.  ,30. ,76. }
+\definecolor{navyblue}    {RGB}{0.  ,0.  ,128.}
+\definecolor{darkblue}    {RGB}{0.  ,0.  ,139.}
+\definecolor{dukeblue}    {RGB}{0.  ,0.  ,156.}
+
+% \definecolor{oucrimson}   {RGB}{132.,22. ,23. }
+% \definecolor{byublue}     {RGB}{0.  ,30. ,76. }
+% \definecolor{navyblue}    {RGB}{0.  ,0.  ,128.}
+% \definecolor{darkblue}    {RGB}{0.  ,0.  ,139.}
+% \definecolor{dukeblue}    {RGB}{0.  ,0.  ,156.}
+
+% Layout
+\usepackage{multirow}
+\usepackage{setspace} %singlespacing; onehalfspacing; doublespacing; setstretch{1.1}
+\setstretch{1.5}
+\usepackage[verbose,margin=1in]{geometry} % Margins
+\setlength{\headheight}{15pt} % Sufficent room for headers
+\usepackage[bottom]{footmisc} % Forces footnotes on bottom
+
+% Headers/Footers
+%\usepackage{datenumber}
+\usepackage{lastpage}
+\setlength{\headheight}{0pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\lhead{} \chead{} \rhead{}
+% \lfoot{\today} \cfoot{}
+% \rfoot{Page \thepage \,of \pageref{LastPage}}
+\cfoot{Curriculum Vitae, Drew  McNichols, page \thepage\ of \pageref*{LastPage} }
+
+
+% Useful Packages
+%\usepackage{bookmark} % For speedier bookmarks
+%\usepackage{amsthm}   % For detailed theorems
+%\usepackage{amssymb}  % For fancy math symbols
+%\usepackage{amsmath}  % For awesome equations/equation arrays
+\usepackage{array}    % For tubular tables
+\usepackage{booktabs}
+\usepackage{longtable}% For long tables
+\usepackage[flushleft]{threeparttable} % For three-part tables
+\usepackage{multicol} % For multi-column cells
+\usepackage{graphicx} % For shiny pictures
+\usepackage{subfig}   % For sub-shiny pictures
+\usepackage{enumerate}% For cusomtizable lists
+%\usepackage{pstricks,pst-node,pst-tree,pst-plot} % For trees
+
+% Bib
+\usepackage[authoryear]{natbib} % Bibliography
+\usepackage{url}                % Allows urls in bib
+
+% TOC
+\setcounter{tocdepth}{4}
+
+% Links
+\usepackage{hyperref}    % Always add hyperref (almost) last
+\hypersetup{colorlinks,breaklinks,citecolor=black,filecolor=black,linkcolor=oucrimson,urlcolor=oucrimson}
+\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
+\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+
+% Custom commands
+\newcommand{\makeheading}[2]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth\marginparwidth\marginparsep}%
+         {\LARGE #1} \hfill  {\LARGE #2 \hspace*{-2.3\marginparsep minus \marginparwidth}}\\[-0.2\baselineskip]%
+                 \rule{\textwidth}{1.5pt}\rule{\marginparsep}{1.5pt}\rule{\marginparwidth}{1.5pt}%
+         \end{minipage}}
+
+\setlength{\parindent}{0in}
+\reversemarginpar
+\renewcommand{\section}[2]{
+        \pagebreak[3]%
+        \vspace{1.0\baselineskip}%
+        \phantomsection\addcontentsline{toc}{section}{#1}%
+        \hspace{0in}%
+        %\marginpar{\raggedright \scshape #1}#2}
+        %\rule[3.5pt]{0.9in}{1.5pt} ~~
+        {\raggedright \scshape \large \textbf{#1}}%
+        \vspace{0.25\baselineskip}#2
+}
+\usepackage[en-US]{datetime2}
+\DTMlangsetup{showdayofmonth=false}
+\begin{document}
+%\thispagestyle{empty}
+
+\makeheading{\Huge Drew T. McNichols}{\normalsize \today}
+
+
+% ADDRESS/CONTACT HEADER
+% ==================================================================================
+\setstretch{1.0}
+\begin{multicols}{2}
+
+\begin{flushleft}
+Department of Economics\\
+University of California, San Diego\\
+9500 Gilman Drive $\#$0508\\
+La Jolla, California 92093-0043\\
+\end{flushleft}
+
+
+\begin{flushright}
+  \textit{Phone:} (541) 556-4953
+
+  \textit{E-mail:} \href{mailto:dmcnichols@ucsd.edu}{dmcnichols@ucsd.edu}
+
+  \textit{Website:} \href{http://www.drewmcnichols.com}{drewmcnichols.com}
+
+  \textit{Citizenship:} United States
+
+\end{flushright}
+
+\end{multicols}
+% ==================================================================================
+
+
+
+\setstretch{1.2}
+\vspace{-.25in}
+
+
+
+
+% \DTMlangsetup{showdayofmonth=false}
+
+
+\section{Current Appointments }\\
+% ==================================================================================
+\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2019- Present & Postdoctoral Research Fellow:\\ \small
+              & \small\hspace*{1em} University California San Diego $\&$ \\
+              & \small\hspace*{1em} The Center for Health and Economic Policy Studies (CHEPS) at\\
+              & \small\hspace*{1em} San Diego State University
+\end{tabular}
+
+\section{Education}\\
+% ==================================================================================
+\begin{tabular}{p{1in}>{\hangindent=0em}p{5.65in}<{\raggedright}}
+
+2019 & Ph.D. in Economics, University of Oregon \\
+     & \small{Dissertation: Essays in Labor Economics} \\
+     & \small{Committee: \href{https://pages.uoregon.edu/bchansen/}{Benjamin Hansen} (Chair), \href{http://www.glenwaddell.com/}{Glen Waddell}, \href{https://pages.uoregon.edu/mkuhn/?}{Mike Kuhn}} \\
+2014 & M.S. in Economics, University of Oregon \\
+2012 & B.S. in Economics \emph{(Magna Cum Laude)}, Oklahoma City University \\
+2012 & B.S. in Mathematics, Oklahoma City University \\
+\end{tabular}
+
+
+\section{Research Fields}\\
+% ==================================================================================
+\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Primary:   & Applied Econometrics, Labor Economics\\
+Secondary: & Health Economics, Public Economics\\
+\end{tabular}
+
+
+
+% \section{Published \& Forthcoming Papers}\\
+% % ==================================================================================
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+% Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+% Year &  \href{link}{``Title''} (with Coauthors), \textit{Journal}, vol. XX, n. No., pages pppp--pppp. \\
+% \end{tabular}
+
+
+
+\section{Working Papers}\\
+% ==================================================================================
+\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+  2019 &  \href{https://drewmcnichols.github.io/salary_history_ban.pdf}{``Information and the Persistence of the Gender Wage Gap; Early Evidence From California's Salary History Ban''} (with Benjamin Hansen)\\
+  \rule{0pt}{3ex}%
+  2016 & \href{https://drewmcnichols.github.io/youth_employment_and_crime.pdf}{``Youth Employment and Crime''}  \\
+\end{tabular}
+
+
+% \pagebreak{}
+% \section{Works in Progress}\\
+% % ==================================================================================
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year & ``Title'' (with Coauthors) \\
+% \end{tabular}
+
+
+% \section{Policy Writings}\\
+% % % ==================================================================================
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year & ``Title'' (with Coauthors), Outlet, Date \\
+% \end{tabular} 2084552839
+
+
+
+\section{Invited Seminar Presentations}\\ %\vspace{-7.5mm}
+% ==================================================================================
+\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2019 & United States Census Bureau  \\
+\end{tabular}
+
+\section{Conference Presentations}\\ %\vspace{-7.5mm}
+% ==================================================================================
+\begin{tabular}{p{3.45in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Southern Economic Association Annual Meeting  & 2017, 2018 \\
+University of Oregon Micro Group              & 2016, 2017       \\
+
+\end{tabular}
+
+
+% \section{Paper Discussions}\\ %\vspace{-7.5mm}
+% % ==================================================================================
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year & ``Title'' by Authors,(Conference, Location) \\
+% \end{tabular}
+
+ \pagebreak{}
+
+\section{Fellowships \& Awards}\\%\vspace{-7.5mm}
+% ==================================================================================
+%\begin{itemize} % Use \item[] to prevent a bullet from appearing
+\begin{tabular}{p{1in}>{\hangindent=1em}p{2.65in}<{\raggedright}p{2.65in}<{\raggedright}}
+2018      & Kleinsorge Research Fellowship    & University of Oregon \\
+2014-2019 & Graduate Teaching Fellowship      & University of Oregon \\
+2014      & Kleinsorge First Year Fellowship  & University of Oregon \\
+\end{tabular}
+
+
+
+
+\section{Teaching Experience}\\
+% ==================================================================================
+\vspace{3mm}
+\begin{tabular}{p{1in}>{\hangindent=1em}p{2.65in}<{\raggedright}p{2.65in}<{\raggedright}}
+  \multicolumn{2}{l}{\hspace*{-.5em}Independent Instructor: }  \\
+2019 Spring & Intermediate Microeconomic Theory & University of Oregon  \\
+2018 Fall   & Principles of Microeconomics & University of Oregon  \\
+2018 Spring & Intermediate Microeconomic Theory & University of Oregon  \\
+2018 Winter & Principles of Microeconomics & University of Oregon  \\
+2017 Summer & Principles of Microeconomics & University of Oregon  \\
+2017 Winter & Intermediate Microeconomic Theory & University of Oregon  \\
+2016 Summer & Intermediate Microeconomic Theory & University of Oregon  \\
+\end{tabular}
+
+
+% \section{Media Appearances}\\
+% % ==================================================================================
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year & \href{Link}{``Title''} by Author, \emph{Outlet}, Date \\
+% \end{tabular}
+
+
+
+%\pagebreak{}
+\section{Software  \& Programming}\\
+%==================================================================================$
+\begin{tabular}{p{.25in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+ & R, Stata, \LaTeX, Python, Matlab\\
+
+\end{tabular}
+
+
+
+% \section{Professional Service}\\
+% %==================================================================================$
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Referee:&    \textit{Journal 1}, \textit{Journal 2}, \\
+% \end{tabular}
+
+% \pagebreak{}
+
+% \section{Departmental \& University Service}\\
+% %==================================================================================$
+% \begin{tabular}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+% Year- &   Role, Department, Committee name \\
+% \end{tabular}
+
+
+%\pagebreak{}
+\section{References}\\
+%==================================================================================$
+
+\begin{minipage}[]{.5\textwidth}
+%
+Benjamin Hansen \\
+W.E. Miner Professor of Economics \\
+University of Oregon\\
+IZA Research Fellow\\
+NBER Research Associate\\
+Email: \href{mailto:bchansen@uoregon.edu}{bchansen@uoregon.edu}\\
+Phone: (541) 357-8395\\
+Web: \href{https://pages.uoregon.edu/bchansen/}{pages.uoregon.edu/bchansen}
+%
+	%
+\end{minipage}
+\begin{minipage}[]{\textwidth}
+	%
+	Michael A. Kuhn\\
+	Assistant Professor of Economics\\
+	University of Oregon\\
+	Email:  \href{mailto:mkuhn@uoregon.edu}{mkuhn@uoregon.edu}\\
+	Phone: (541) 346-1268\\
+	Web:  \href{https://pages.uoregon.edu/mkuhn}{pages.uoregon.edu/mkuhn}n\\
+  \\
+
+	%
+\end{minipage}
+\bigskip \\
+\begin{minipage}[]{.4\textwidth}
+	%
+	Glen R. Waddell\\
+	Professor of Economics\\
+	University of Oregon\\
+	IZA Research Fellow\\
+	Email: \href{mailto:waddell@uoregon.edu}{waddell@uoregon.edu}\\
+	Phone: (541) 729-3405\\
+	Web: \href{http://www.glenwaddell.com}{glenwaddell.com}
+	%
+\end{minipage}
+
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
