@@ -59,7 +59,9 @@
 \usepackage{graphicx} % For shiny pictures
 \usepackage{subfig}   % For sub-shiny pictures
 \usepackage{enumerate}% For cusomtizable lists
+\usepackage{enumitem}
 %\usepackage{pstricks,pst-node,pst-tree,pst-plot} % For trees
+\usepackage{ragged2e}
 
 % Bib
 \usepackage[authoryear]{natbib} % Bibliography
@@ -183,23 +185,29 @@ Secondary: & Health Economics, Public Economics\\
 
 \section{Working Papers}\\
 % ==================================================================================
-\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
-  2020 & \href{https://cheps.sdsu.edu/docs/CHEPS_Working_Paper_No_2020401_FSMD_April_10_2020.pdf}{``Did California’s Shelter in Place Order Work? Early Evidence on Coronavirus-Related Health Benefits''} (with Andrew Friedson, Joseph Sabia, and Dhaval Dave)
-  2020 &  \href{https://drewmcnichols.github.io/salary_history_ban.pdf}{``Information and the Persistence of the Gender Wage Gap; Early Evidence From California's Salary History Ban''} (with Benjamin Hansen)\\
-  \rule{0pt}{3ex}%
-  2016 & \href{https://drewmcnichols.github.io/youth_employment_and_crime.pdf}{``Youth Employment and Crime''}  \\
-\end{tabular}
+\vspace*{-.7cm}
+\begin{itemize}[label={},itemindent=-2em,leftmargin=2em]
+ \item\href{https://cheps.sdsu.edu/docs/CHEPS_Working_Paper_No_2020401_FSMD_April_10_2020.pdf}{``Did California's Shelter in Place Order Work? Early Evidence on Coronavirus-Related Health Benefits''} (with Andrew Friedson, Joseph Sabia, and Dhaval Dave) \\
+  \href{https://www.nber.org/papers/w26992}{\emph{ NBER Working Paper No. 26992}}
 
+  \item\href{https://drewmcnichols.github.io/salary_history_ban.pdf}{``Information and the Persistence of the Gender Wage Gap; Early Evidence From California's Salary History Ban''} (with Benjamin Hansen) \\
+    \href{https://www.nber.org/papers/w27054}{\emph{ NBER Working Paper No. 27054}}
+  % \rule{0pt}{3ex}%
+\item \href{https://drewmcnichols.github.io/youth_employment_and_crime.pdf}{``Youth Employment and Crime''}  \\
+\end{itemize}
+\vspace*{-1cm}
 
-% \pagebreak{}
-\section{Works in Progress}\\
-% ==================================================================================
-\begin{tabular}{p{1in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
-2020 & ``More Sports, Less Crime? New Evidence from Title IX'' (with Joseph Sabia and Gokhan Kumpas) \\
-2020 & ``Do Tobacco 21 Laws Work?'' (with Calvin Bryan, Benjamin Hansen, and Joseph Sabia ) \\
-% 2020 & ``Industry Contours of Post-ACA Changes in Insurance Coverage'' (with Jeffery Clemens and Joseph Sabia ) \\
-% 2020 & ``Minimum Wages'' (with Jeffery Clemens and Joseph Sabia ) \\
-\end{tabular}
+% % \pagebreak{}
+% \section{Works in Progress}\\
+% % ==================================================================================
+% \vspace*{-.7cm}
+% \begin{itemize}[label={},itemindent=-2em,leftmargin=2em]
+%  \item ``More Sports, Less Crime? New Evidence from Title IX'' (with Joseph Sabia and Gokhan Kumpas) \\ \\
+% \item``Do Tobacco 21 Laws Work?'' (with Calvin Bryan, Benjamin Hansen, and Joseph Sabia ) \\
+% % 2020 & ``Industry Contours of Post-ACA Changes in Insurance Coverage'' (with Jeffery Clemens and Joseph Sabia ) \\
+% % 2020 & ``Minimum Wages'' (with Jeffery Clemens and Joseph Sabia ) \\\item
+% \end{itemize}
+% \vspace*{-1cm}
 
 
 % \section{Policy Writings}\\
@@ -217,6 +225,7 @@ Secondary: & Health Economics, Public Economics\\
 2019 & United States Census Bureau  \\
 \end{tabular}
 
+\pagebreak
 \section{Conference Presentations}\\ %\vspace{-7.5mm}
 % ==================================================================================
 \begin{tabular}{p{3.45in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
@@ -233,7 +242,7 @@ University of Oregon Micro Group              & 2016, 2017       \\
 % Year & ``Title'' by Authors,(Conference, Location) \\
 % \end{tabular}
 
- \pagebreak{}
+
 
 \section{Fellowships \& Awards}\\%\vspace{-7.5mm}
 % ==================================================================================
@@ -295,7 +304,7 @@ University of Oregon Micro Group              & 2016, 2017       \\
 % \end{tabular}
 
 
-%\pagebreak{}
+\pagebreak{}
 \section{References}\\
 %==================================================================================$
 
