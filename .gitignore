@@ -3,7 +3,3 @@
 .RData
 .Ruserdata
 
-*.aux
-*.log
-*.out
-*.gz
